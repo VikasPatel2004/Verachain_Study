@@ -1,13 +1,17 @@
 'use client';
 import ProjectCard from '@/components/ProjectCard';
-import FAQ from '@/components/Faq';
 import ScrollStack, { ScrollStackItem } from '@/components/ScrollStack'
+import WhyUsSection from '@/components/WhyUsSection'
 
 export default function Features() {
   return (
     <div className="relative w-full min-h-screen overflow-x-hidden bg-black">
       <main className="space-y-15 px-4 md:px-12 ">
 
+
+
+
+        <WhyUsSection/>
 
 {/* Ultra stable ScrollStack with no shaking */}
 <div className="w-full bg-gradient-to-b from-black via-gray-900 to-black">
@@ -128,18 +132,6 @@ export default function Features() {
     </ScrollStackItem>
   </ScrollStack>
 </div>
-
-        {/* Project Cards Section */}
-        <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <ProjectCard title="Trust Token" description="Verified by community" />
-          <ProjectCard title="Secure Identity" description="Blockchain-backed ID" />
-          <ProjectCard title="Open Verification" description="Transparent workflows" />
-        </section>
-
-        {/* FAQ Section */}
-        <section>
-          <FAQ />
-        </section>
 
       </main>
     </div>
